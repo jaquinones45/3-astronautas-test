@@ -3,16 +3,16 @@ import { FC } from 'react';
 import styles from "./SearchBar.module.css";
 
 interface SearchBarProps {
-  searchTerm: string;
+  search: string;
   onSearchChange: (value: string) => void;
 }
 
-const SearchBar: FC<SearchBarProps> = ({ searchTerm, onSearchChange }) => {
+const SearchBar: FC<SearchBarProps> = ({ search, onSearchChange }) => {
   return (
     <input
       type="text"
       placeholder="Buscar planeta"
-      value={searchTerm}
+      value={search}
       onChange={(e) => onSearchChange(e.target.value)}
       className={styles.input}
     />

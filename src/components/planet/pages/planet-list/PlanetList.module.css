@@ -25,3 +25,37 @@
 .pagination {
   margin-top: 2rem;
 }
+
+
+.filterItem {
+  flex: 1 1 40%;
+  min-width: 200px;
+}
+
+.clearButtonContainer {
+  flex: 1 1 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clearButton {
+  padding: 0.5rem 1rem;
+  background-color: #f56565;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e53e3e;
+  }
+}
+
+@media (max-width: 768px) {
+  .filterItem,
+  .clearButtonContainer {
+    flex: 1 1 100%;
+  }
+}

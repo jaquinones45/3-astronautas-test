@@ -1,6 +1,6 @@
 export interface PlanetStore {
-  searchTerm: string;
-  setSearchTerm: (term: string) => void;
+  search: string;
+  setSearch: (term: string) => void;
   sortOrder: string;
   setSortOrder: (order: string) => void;
   currentPage: number;

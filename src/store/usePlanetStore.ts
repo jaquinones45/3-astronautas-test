@@ -3,8 +3,8 @@ import { create } from 'zustand';
 import { PlanetStore } from '@/types/PlanetStore';
 
 export const usePlanetStore = create<PlanetStore>((set) => ({
-  searchTerm: '',
-  setSearchTerm: (term) => set({ searchTerm: term }),
+  search: '',
+  setSearch: (term) => set({ search: term }),
 
   sortOrder: 'asc',
   setSortOrder: (order) => set({ sortOrder: order }),
