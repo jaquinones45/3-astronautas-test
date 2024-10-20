@@ -45,7 +45,7 @@ La aplicación muestra una lista de planetas obtenida desde una API pública y p
 └── README.md                 # Este archivo
 ```
 
-## Url video
+## Url Page
 
 ```bash
 https://671573b2ee5caa78f49ed0aa--3astronautas-test.netlify.app
