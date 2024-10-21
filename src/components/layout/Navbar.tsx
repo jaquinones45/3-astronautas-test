@@ -9,9 +9,10 @@ const Navbar = () => (
       <Link href="/">
         <Image
           src="/image/logo.avif"
-          alt="Logo"
+          alt="Logo de Tres Astronautas"
           width={180}
           height={50}
+          layout="responsive"
         />
       </Link>
     </div>
