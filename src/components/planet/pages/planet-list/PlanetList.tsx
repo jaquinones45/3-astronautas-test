@@ -40,6 +40,14 @@ const PlanetList = ({ bodies }: { bodies: PlanetProps[] }) => {
   const handleSetSearch = (value: string) => {
     setSearch(value);
     setCurrentPage(1);
+    if (value === '') {
+      router.push({
+        pathname: router.pathname,
+        query: {
+          sort: router.query?.sort,
+        },
+      }, undefined, { shallow: true });
+    }
   };
 
   const handlesetSortOrder = (value: string) => {
