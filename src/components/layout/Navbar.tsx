@@ -12,7 +12,6 @@ const Navbar = () => (
           alt="Logo de Tres Astronautas"
           width={180}
           height={50}
-          layout="responsive"
         />
       </Link>
     </div>
