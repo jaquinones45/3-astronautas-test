@@ -54,7 +54,7 @@ const PlanetList = ({ bodies }: { bodies: PlanetProps[] }) => {
     if (router.query?.sort) {
       setSortOrder(String(router.query.sort));
     }
-  }, [router, setSearch, setSortOrder]);
+  }, [router]);
 
   useEffect(() => {
     if (search) {
@@ -66,7 +66,7 @@ const PlanetList = ({ bodies }: { bodies: PlanetProps[] }) => {
         },
       }, undefined, { shallow: true });
     }
-  }, [router, search]);
+  }, [search]);
 
   useEffect(() => {
     if (sortOrder) {
@@ -78,7 +78,7 @@ const PlanetList = ({ bodies }: { bodies: PlanetProps[] }) => {
         },
       }, undefined, { shallow: true });
     }
-  }, [router, sortOrder]);
+  }, [sortOrder]);
 
   return (
     <div className={styles.container}>
